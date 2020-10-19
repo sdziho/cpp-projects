@@ -1,0 +1,4 @@
+/rhome/s/sdziho1/workspace/TP/T2/Z2/main.cpp: In function ‘bool TestPerioda(std::vector<double>, int)’:
+/rhome/s/sdziho1/workspace/TP/T2/Z2/main.cpp:12:29: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(v.at(i)!=v.at(p+i)){
+                             ^

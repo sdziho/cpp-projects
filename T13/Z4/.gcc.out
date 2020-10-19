@@ -1,0 +1,44 @@
+/rhome/s/sdziho1/workspace/TP/T13/Z4/main.cpp:26:14: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+                if(prosjek==5) prosjek=ocjena;
+                   ~~~~~~~^ ~
+/rhome/s/sdziho1/workspace/TP/T13/Z4/main.cpp:69:9: error: member reference type 'const Student' is not a pointer; maybe you meant to use '.'?
+                *pok=s->pok;
+                     ~^~
+                      .
+/rhome/s/sdziho1/workspace/TP/T13/Z4/main.cpp:69:7: error: no viable overloaded '='
+                *pok=s->pok;
+                ~~~~^~~~~~~
+/rhome/s/sdziho1/workspace/TP/T13/Z4/main.cpp:10:7: note: candidate function (the implicit copy assignment operator) not viable: no known conversion from 'ApstraktniStudent *const' to 'const ApstraktniStudent' for 1st argument; dereference the argument with *
+class ApstraktniStudent {
+      ^
+/rhome/s/sdziho1/workspace/TP/T13/Z4/main.cpp:74:4: error: no viable overloaded '='
+s1 = StudentBachelor("Dusko", "Dugousko", 1234);
+~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/rhome/s/sdziho1/workspace/TP/T13/Z4/main.cpp:68:11: note: candidate function not viable: no known conversion from 'StudentBachelor' to 'const Student' for 1st argument
+        Student &operator=(const Student &s){
+                 ^
+/rhome/s/sdziho1/workspace/TP/T13/Z4/main.cpp:76:4: error: no viable overloaded '='
+s2 = StudentMaster("Paja", "Patak", 4312, 2015);
+~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/rhome/s/sdziho1/workspace/TP/T13/Z4/main.cpp:68:11: note: candidate function not viable: no known conversion from 'StudentMaster' to 'const Student' for 1st argument
+        Student &operator=(const Student &s){
+                 ^
+/rhome/s/sdziho1/workspace/TP/T13/Z4/main.cpp:78:4: error: no member named 'RegistrirajIspit' in 'Student'
+s1.RegistrirajIspit(6); s1.RegistrirajIspit(9);
+~~ ^
+/rhome/s/sdziho1/workspace/TP/T13/Z4/main.cpp:78:28: error: no member named 'RegistrirajIspit' in 'Student'
+s1.RegistrirajIspit(6); s1.RegistrirajIspit(9);
+                        ~~ ^
+/rhome/s/sdziho1/workspace/TP/T13/Z4/main.cpp:79:4: error: no member named 'RegistrirajIspit' in 'Student'
+s2.RegistrirajIspit(8);
+~~ ^
+/rhome/s/sdziho1/workspace/TP/T13/Z4/main.cpp:80:4: error: no member named 'IspisiPodatke' in 'Student'
+s1.IspisiPodatke(); s2.IspisiPodatke();
+~~ ^
+/rhome/s/sdziho1/workspace/TP/T13/Z4/main.cpp:80:24: error: no member named 'IspisiPodatke' in 'Student'
+s1.IspisiPodatke(); s2.IspisiPodatke();
+                    ~~ ^
+/rhome/s/sdziho1/workspace/TP/T13/Z4/main.cpp:83:4: error: no member named 'IspisiPodatke' in 'Student'
+s1.IspisiPodatke();
+~~ ^
+1 warning and 10 errors generated.

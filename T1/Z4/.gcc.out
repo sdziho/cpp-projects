@@ -1,0 +1,4 @@
+/rhome/s/sdziho1/workspace/TP/T1/Z4/main.cpp: In function ‘int main()’:
+/rhome/s/sdziho1/workspace/TP/T1/Z4/main.cpp:12:44: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(unos<0 || (!std::cin) || (unos!=unos1)){
+                                            ^

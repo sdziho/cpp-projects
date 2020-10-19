@@ -1,0 +1,7 @@
+/rhome/s/sdziho1/workspace/TP/T8/Z5/main.cpp:15:14: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+        if(el==zavrsni) break;
+           ~~^ ~~~~~~~
+/rhome/s/sdziho1/workspace/TP/T8/Z5/main.cpp:63:27: note: in instantiation of function template specialization 'KreirajPovezanuListu<double>' requested here
+    Cvor<double> *pocetak(KreirajPovezanuListu(0.));
+                          ^
+1 warning generated.

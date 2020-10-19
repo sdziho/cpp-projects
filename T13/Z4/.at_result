@@ -1,0 +1,417 @@
+{
+    "buildhost_description": {
+        "id": "lab002c18",
+        "os": "Linux 2.6.32-504.1.3.el6.x86_64 x86_64\n\"CentOS release 6.7 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3811": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3811.cpp: In function ‘int main()’:\nbs_test_3811.cpp:24:3: error: ‘StudentBachelor’ was not declared in this scope\n   StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);\n   ^~~~~~~~~~~~~~~\nbs_test_3811.cpp:25:3: error: ‘StudentMaster’ was not declared in this scope\n   StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);\n   ^~~~~~~~~~~~~\nbs_test_3811.cpp:26:3: error: ‘Student’ was not declared in this scope\n   Student s1(sb), s2(sm);\n   ^~~~~~~\nbs_test_3811.cpp:27:3: error: ‘s1’ was not declared in this scope\n   s1.RegistrirajIspit(6); s1.RegistrirajIspit(9);\n   ^~\nbs_test_3811.cpp:28:3: error: ‘s2’ was not declared in this scope\n   s2.RegistrirajIspit(8);\n   ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "3",
+                        "message": "'StudentBachelor' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3811.cpp:24:3: error: ‘StudentBachelor’ was not declared in this scope   StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);   ^~~~~~~~~~~~~~~",
+                        "code": "StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "3",
+                        "message": "'StudentMaster' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3811.cpp:25:3: error: ‘StudentMaster’ was not declared in this scope   StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);   ^~~~~~~~~~~~~",
+                        "code": "StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "3",
+                        "message": "'Student' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3811.cpp:26:3: error: ‘Student’ was not declared in this scope   Student s1(sb), s2(sm);   ^~~~~~~",
+                        "code": "Student s1(sb), s2(sm);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "3",
+                        "message": "'s1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3811.cpp:27:3: error: ‘s1’ was not declared in this scope   s1.RegistrirajIspit(6); s1.RegistrirajIspit(9);   ^~",
+                        "code": "s1.RegistrirajIspit(6); s1.RegistrirajIspit(9);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 6,
+                        "col": "3",
+                        "message": "'s2' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3811.cpp:28:3: error: ‘s2’ was not declared in this scope   s2.RegistrirajIspit(8);   ^~",
+                        "code": "s2.RegistrirajIspit(8);"
+                    }
+                ]
+            }
+        },
+        "3812": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3812.cpp: In function ‘int main()’:\nbs_test_3812.cpp:25:3: error: ‘StudentBachelor’ was not declared in this scope\n   StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);\n   ^~~~~~~~~~~~~~~\nbs_test_3812.cpp:26:3: error: ‘StudentMaster’ was not declared in this scope\n   StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);\n   ^~~~~~~~~~~~~\nbs_test_3812.cpp:27:3: error: ‘Student’ was not declared in this scope\n   Student s1(sb), s2(sm);\n   ^~~~~~~\nbs_test_3812.cpp:28:16: error: ‘s1’ was not declared in this scope\n   std::cout << s1.DajIme() << \" \" << s1.DajPrezime() << \" \" << s1.DajBrojIndeksa()\n                ^~\nbs_test_3812.cpp:30:16: error: ‘s2’ was not declared in this scope\n   std::cout << s2.DajIme() << \" \" << s2.DajPrezime() << \" \" << s2.DajBrojIndeksa()\n                ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "3",
+                        "message": "'StudentBachelor' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3812.cpp:25:3: error: ‘StudentBachelor’ was not declared in this scope   StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);   ^~~~~~~~~~~~~~~",
+                        "code": "StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "3",
+                        "message": "'StudentMaster' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3812.cpp:26:3: error: ‘StudentMaster’ was not declared in this scope   StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);   ^~~~~~~~~~~~~",
+                        "code": "StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "3",
+                        "message": "'Student' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3812.cpp:27:3: error: ‘Student’ was not declared in this scope   Student s1(sb), s2(sm);   ^~~~~~~",
+                        "code": "Student s1(sb), s2(sm);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 6,
+                        "col": "16",
+                        "message": "'s1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3812.cpp:28:16: error: ‘s1’ was not declared in this scope   std::cout << s1.DajIme() << \" \" << s1.DajPrezime() << \" \" << s1.DajBrojIndeksa()                ^~",
+                        "code": "std::cout << s1.DajIme() << \" \" << s1.DajPrezime() << \" \" << s1.DajBrojIndeksa()"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 8,
+                        "col": "16",
+                        "message": "'s2' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3812.cpp:30:16: error: ‘s2’ was not declared in this scope   std::cout << s2.DajIme() << \" \" << s2.DajPrezime() << \" \" << s2.DajBrojIndeksa()                ^~",
+                        "code": "std::cout << s2.DajIme() << \" \" << s2.DajPrezime() << \" \" << s2.DajBrojIndeksa()"
+                    }
+                ]
+            }
+        },
+        "3813": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3813.cpp: In function ‘int main()’:\nbs_test_3813.cpp:25:3: error: ‘StudentBachelor’ was not declared in this scope\n   StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);\n   ^~~~~~~~~~~~~~~\nbs_test_3813.cpp:26:3: error: ‘StudentMaster’ was not declared in this scope\n   StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);\n   ^~~~~~~~~~~~~\nbs_test_3813.cpp:27:3: error: ‘Student’ was not declared in this scope\n   Student s1(sb);\n   ^~~~~~~\nbs_test_3813.cpp:28:3: error: ‘s1’ was not declared in this scope\n   s1.PonistiOcjene();\n   ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "3",
+                        "message": "'StudentBachelor' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3813.cpp:25:3: error: ‘StudentBachelor’ was not declared in this scope   StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);   ^~~~~~~~~~~~~~~",
+                        "code": "StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "3",
+                        "message": "'StudentMaster' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3813.cpp:26:3: error: ‘StudentMaster’ was not declared in this scope   StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);   ^~~~~~~~~~~~~",
+                        "code": "StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "3",
+                        "message": "'Student' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3813.cpp:27:3: error: ‘Student’ was not declared in this scope   Student s1(sb);   ^~~~~~~",
+                        "code": "Student s1(sb);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 6,
+                        "col": "3",
+                        "message": "'s1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3813.cpp:28:3: error: ‘s1’ was not declared in this scope   s1.PonistiOcjene();   ^~",
+                        "code": "s1.PonistiOcjene();"
+                    }
+                ]
+            }
+        },
+        "3814": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3814.cpp: In function ‘int main()’:\nbs_test_3814.cpp:25:3: error: ‘StudentBachelor’ was not declared in this scope\n   StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);\n   ^~~~~~~~~~~~~~~\nbs_test_3814.cpp:26:3: error: ‘StudentMaster’ was not declared in this scope\n   StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);\n   ^~~~~~~~~~~~~\nbs_test_3814.cpp:27:3: error: ‘Student’ was not declared in this scope\n   Student s1(sb); Student s2(sm);\n   ^~~~~~~\nbs_test_3814.cpp:27:27: error: expected ‘;’ before ‘s2’\n   Student s1(sb); Student s2(sm);\n                           ^~\nbs_test_3814.cpp:28:3: error: ‘s1’ was not declared in this scope\n   s1 = s2;\n   ^~\nbs_test_3814.cpp:28:8: error: ‘s2’ was not declared in this scope\n   s1 = s2;\n        ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "3",
+                        "message": "'StudentBachelor' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3814.cpp:25:3: error: ‘StudentBachelor’ was not declared in this scope   StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);   ^~~~~~~~~~~~~~~",
+                        "code": "StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "3",
+                        "message": "'StudentMaster' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3814.cpp:26:3: error: ‘StudentMaster’ was not declared in this scope   StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);   ^~~~~~~~~~~~~",
+                        "code": "StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "3",
+                        "message": "'Student' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3814.cpp:27:3: error: ‘Student’ was not declared in this scope   Student s1(sb); Student s2(sm);   ^~~~~~~",
+                        "code": "Student s1(sb); Student s2(sm);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "27",
+                        "message": "expected ';' before 's2'",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3814.cpp:27:27: error: expected ‘;’ before ‘s2’   Student s1(sb); Student s2(sm);                           ^~",
+                        "code": "Student s1(sb); Student s2(sm);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 6,
+                        "col": "3",
+                        "message": "'s1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3814.cpp:28:3: error: ‘s1’ was not declared in this scope   s1 = s2;   ^~",
+                        "code": "s1 = s2;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 6,
+                        "col": "8",
+                        "message": "'s2' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3814.cpp:28:8: error: ‘s2’ was not declared in this scope   s1 = s2;        ^~",
+                        "code": "s1 = s2;"
+                    }
+                ]
+            }
+        },
+        "3815": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3815.cpp: In function ‘int main()’:\nbs_test_3815.cpp:25:3: error: ‘StudentBachelor’ was not declared in this scope\n   StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);\n   ^~~~~~~~~~~~~~~\nbs_test_3815.cpp:26:3: error: ‘StudentMaster’ was not declared in this scope\n   StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);\n   ^~~~~~~~~~~~~\nbs_test_3815.cpp:27:3: error: ‘Student’ was not declared in this scope\n   Student s1(sb); Student s2(sm);\n   ^~~~~~~\nbs_test_3815.cpp:27:27: error: expected ‘;’ before ‘s2’\n   Student s1(sb); Student s2(sm);\n                           ^~\nbs_test_3815.cpp:28:11: error: expected ‘;’ before ‘s3’\n   Student s3(sb), s4(sm), s5(s1), s6(std::move(s2));    // Test konstruktora\n           ^~\nbs_test_3815.cpp:29:3: error: ‘s3’ was not declared in this scope\n   s3.IspisiPodatke(); s4.IspisiPodatke();\n   ^~\nbs_test_3815.cpp:29:23: error: ‘s4’ was not declared in this scope\n   s3.IspisiPodatke(); s4.IspisiPodatke();\n                       ^~\nbs_test_3815.cpp:30:3: error: ‘s5’ was not declared in this scope\n   s5.IspisiPodatke(); s6.IspisiPodatke();\n   ^~\nbs_test_3815.cpp:30:23: error: ‘s6’ was not declared in this scope\n   s5.IspisiPodatke(); s6.IspisiPodatke();\n                       ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "3",
+                        "message": "'StudentBachelor' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3815.cpp:25:3: error: ‘StudentBachelor’ was not declared in this scope   StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);   ^~~~~~~~~~~~~~~",
+                        "code": "StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "3",
+                        "message": "'StudentMaster' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3815.cpp:26:3: error: ‘StudentMaster’ was not declared in this scope   StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);   ^~~~~~~~~~~~~",
+                        "code": "StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "3",
+                        "message": "'Student' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3815.cpp:27:3: error: ‘Student’ was not declared in this scope   Student s1(sb); Student s2(sm);   ^~~~~~~",
+                        "code": "Student s1(sb); Student s2(sm);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "27",
+                        "message": "expected ';' before 's2'",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3815.cpp:27:27: error: expected ‘;’ before ‘s2’   Student s1(sb); Student s2(sm);                           ^~",
+                        "code": "Student s1(sb); Student s2(sm);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 6,
+                        "col": "11",
+                        "message": "expected ';' before 's3'",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3815.cpp:28:11: error: expected ‘;’ before ‘s3’   Student s3(sb), s4(sm), s5(s1), s6(std::move(s2));    // Test konstruktora           ^~",
+                        "code": "Student s3(sb), s4(sm), s5(s1), s6(std::move(s2));    // Test konstruktora"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 7,
+                        "col": "3",
+                        "message": "'s3' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3815.cpp:29:3: error: ‘s3’ was not declared in this scope   s3.IspisiPodatke(); s4.IspisiPodatke();   ^~",
+                        "code": "s3.IspisiPodatke(); s4.IspisiPodatke();"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 7,
+                        "col": "23",
+                        "message": "'s4' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3815.cpp:29:23: error: ‘s4’ was not declared in this scope   s3.IspisiPodatke(); s4.IspisiPodatke();                       ^~",
+                        "code": "s3.IspisiPodatke(); s4.IspisiPodatke();"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 8,
+                        "col": "3",
+                        "message": "'s5' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3815.cpp:30:3: error: ‘s5’ was not declared in this scope   s5.IspisiPodatke(); s6.IspisiPodatke();   ^~",
+                        "code": "s5.IspisiPodatke(); s6.IspisiPodatke();"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 8,
+                        "col": "23",
+                        "message": "'s6' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_3815.cpp:30:23: error: ‘s6’ was not declared in this scope   s5.IspisiPodatke(); s6.IspisiPodatke();                       ^~",
+                        "code": "s5.IspisiPodatke(); s6.IspisiPodatke();"
+                    }
+                ]
+            }
+        },
+        "71234": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_71234.cpp: In function ‘int main()’:\nbs_test_71234.cpp:24:3: error: ‘StudentBachelor’ was not declared in this scope\n   StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);\n   ^~~~~~~~~~~~~~~\nbs_test_71234.cpp:25:3: error: ‘StudentMaster’ was not declared in this scope\n   StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);\n   ^~~~~~~~~~~~~\nbs_test_71234.cpp:26:3: error: ‘Student’ was not declared in this scope\n   Student s1, s2;\n   ^~~~~~~\nbs_test_71234.cpp:27:3: error: ‘s1’ was not declared in this scope\n   s1 = sb;\n   ^~\nbs_test_71234.cpp:27:8: error: ‘sb’ was not declared in this scope\n   s1 = sb;\n        ^~\nbs_test_71234.cpp:28:3: error: ‘s2’ was not declared in this scope\n   s2 = sm;\n   ^~\nbs_test_71234.cpp:28:8: error: ‘sm’ was not declared in this scope\n   s2 = sm;\n        ^~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "3",
+                        "message": "'StudentBachelor' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_71234.cpp:24:3: error: ‘StudentBachelor’ was not declared in this scope   StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);   ^~~~~~~~~~~~~~~",
+                        "code": "StudentBachelor sb(\"Dusko\", \"Dugousko\", 1234);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "3",
+                        "message": "'StudentMaster' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_71234.cpp:25:3: error: ‘StudentMaster’ was not declared in this scope   StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);   ^~~~~~~~~~~~~",
+                        "code": "StudentMaster sm(\"Paja\", \"Patak\", 4312, 2015);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "3",
+                        "message": "'Student' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_71234.cpp:26:3: error: ‘Student’ was not declared in this scope   Student s1, s2;   ^~~~~~~",
+                        "code": "Student s1, s2;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "3",
+                        "message": "'s1' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_71234.cpp:27:3: error: ‘s1’ was not declared in this scope   s1 = sb;   ^~",
+                        "code": "s1 = sb;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 5,
+                        "col": "8",
+                        "message": "'sb' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_71234.cpp:27:8: error: ‘sb’ was not declared in this scope   s1 = sb;        ^~",
+                        "code": "s1 = sb;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 6,
+                        "col": "3",
+                        "message": "'s2' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_71234.cpp:28:3: error: ‘s2’ was not declared in this scope   s2 = sm;   ^~",
+                        "code": "s2 = sm;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 6,
+                        "col": "8",
+                        "message": "'sm' was not declared in this scope",
+                        "output": "/tmp/buildservice/bs_4150/bs_test_71234.cpp:28:8: error: ‘sm’ was not declared in this scope   s2 = sm;        ^~",
+                        "code": "s2 = sm;"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1497021154
+}

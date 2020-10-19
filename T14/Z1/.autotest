@@ -1,0 +1,69 @@
+{
+    "id": 1300,
+    "name": "Tehnike programiranja (2016\/2017), Tutorijal 14, zadatak 1",
+    "language": "C++",
+    "required_compiler": "g++",
+    "preferred_compiler": "g++",
+    "compiler_features": [
+
+    ],
+    "compiler_options": "-std=c++11 -O1 -Wall -Wuninitialized -Winit-self -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-std=c++11 -ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 2,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT1: postavka\n\tconst char *c = R\"DAT(Damir Damirovic\n1234\n3\/10\/1998\n6,8,5,10,7,7,9,8\nBrus Li Ramadanovic\n4312\n23\/9\/1997\n7,9,6,5,8,8,7\nEna Popovic-Hodzic\n2143\n4\/12\/1998\n9,10,8,6,5,7,9,10,6\n)DAT\";\n\tstd::remove (\"STUDENTI.TXT\");\n\tstd::ofstream s (\"STUDENTI.TXT\");\n\ts << c;\n\ts.close();\n        _main();\n\tstd::cout << std::ifstream (\"IZVJESTAJ.TXT\").rdbuf();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Student                       Indeks    Datum rodjenja      Prosjek   \\n-------                       ------    --------------      -------   \\nEna Popovic-Hodzic            2143      4\/12\/1998           8.12      \\nDamir Damirovic               1234      3\/10\/1998           7.86      \\nBrus Li Ramadanovic           4312      23\/9\/1997           7.50"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT2: neispravan format datoteke (datum: 3\/16\/1998)\n\tconst char *c = R\"DAT(Damir Damirovic\n1234\n3\/16\/1998\n6,8,5,10,7,7,9,8\nBrus Li Ramadanovic\n4312\n23\/9\/1997\n7,9,6,5,8,8,7\nEna Popovic-Hodzic\n2143\n4\/12\/1998\n9,10,8,6,5,7,9,10,6\n)DAT\";\n\tstd::remove (\"STUDENTI.TXT\");\n\tstd::ofstream s (\"STUDENTI.TXT\");\n\ts << c;\n\ts.close();\n\t_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Neispravan format datoteke STUDENTI.TXT"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

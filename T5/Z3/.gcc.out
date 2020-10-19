@@ -1,0 +1,4 @@
+/rhome/s/sdziho1/workspace/TP/T5/Z3/main.cpp:27:6: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+        if(c==d) return true;
+           ~^ ~
+1 warning generated.

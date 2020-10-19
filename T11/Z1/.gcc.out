@@ -1,0 +1,4 @@
+/rhome/s/sdziho1/workspace/TP/T11/Z1/main.cpp:19:16: warning: unused variable 'k2' [-Wunused-variable]
+        NeobicnaKlasa k2= 5; 
+                      ^
+1 warning generated.

@@ -1,0 +1,5 @@
+/rhome/s/sdziho1/workspace/TP/T3/Z2/main.cpp: In function ‘int main()’:
+/rhome/s/sdziho1/workspace/TP/T3/Z2/main.cpp:66:24: error: expected primary-expression before ‘)’ token
+       if(i!=c.size()-1))
+                        ^
+/rhome/s/sdziho1/workspace/TP/T3/Z2/main.cpp:66:24: error: expected ‘;’ before ‘)’ token

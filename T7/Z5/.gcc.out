@@ -1,0 +1,44 @@
+/rhome/s/sdziho1/workspace/TP/T7/Z5/main.cpp:13:14: error: no type named 'shared_ptr' in namespace 'std'
+typedef std::shared_ptr<std::string> Pametni;
+        ~~~~~^
+/rhome/s/sdziho1/workspace/TP/T7/Z5/main.cpp:13:24: error: expected unqualified-id
+typedef std::shared_ptr<std::string> Pametni;
+                       ^
+/rhome/s/sdziho1/workspace/TP/T7/Z5/main.cpp:22:8: error: no member named 'shared_ptr' in namespace 'std'
+                std::shared_ptr<Pametni> recenice(new Pametni[n],[](Pametni *recenice){delete []recenice;});
+                ~~~~~^
+/rhome/s/sdziho1/workspace/TP/T7/Z5/main.cpp:22:19: error: use of undeclared identifier 'Pametni'
+                std::shared_ptr<Pametni> recenice(new Pametni[n],[](Pametni *recenice){delete []recenice;});
+                                ^
+/rhome/s/sdziho1/workspace/TP/T7/Z5/main.cpp:22:41: error: unknown type name 'Pametni'
+                std::shared_ptr<Pametni> recenice(new Pametni[n],[](Pametni *recenice){delete []recenice;});
+                                                      ^
+/rhome/s/sdziho1/workspace/TP/T7/Z5/main.cpp:24:4: error: use of undeclared identifier 'recenice'
+                        recenice.get()[i]=std::make_shared<std::string> ();
+                        ^
+/rhome/s/sdziho1/workspace/TP/T7/Z5/main.cpp:24:27: error: no template named 'make_shared' in namespace 'std'; did you mean 'make_signed'?
+                        recenice.get()[i]=std::make_shared<std::string> ();
+                                          ~~~~~^~~~~~~~~~~
+                                               make_signed
+/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../../include/c++/4.8/type_traits:1612:12: note: 'make_signed' declared here
+    struct make_signed 
+           ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../../include/c++/4.8/type_traits:1613:24: error: implicit instantiation of undefined template 'std::__make_signed_selector<std::basic_string<char>, false, false>'
+    { typedef typename __make_signed_selector<_Tp>::__type type; };
+                       ^
+/rhome/s/sdziho1/workspace/TP/T7/Z5/main.cpp:24:22: note: in instantiation of template class 'std::make_signed<std::basic_string<char> >' requested here
+                        recenice.get()[i]=std::make_shared<std::string> ();
+                                          ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/4.8/../../../../include/c++/4.8/type_traits:1577:11: note: template is declared here
+    class __make_signed_selector;
+          ^
+/rhome/s/sdziho1/workspace/TP/T7/Z5/main.cpp:25:27: error: use of undeclared identifier 'recenice'
+                        std::getline(std::cin,*recenice.get()[i]);
+                                               ^
+/rhome/s/sdziho1/workspace/TP/T7/Z5/main.cpp:27:13: error: use of undeclared identifier 'recenice'
+                std::sort(recenice.get(),recenice.get()+n,[](Pametni x, Pametni y){return *x<*y;});
+                          ^
+/rhome/s/sdziho1/workspace/TP/T7/Z5/main.cpp:30:19: error: use of undeclared identifier 'recenice'
+                        std::cout << *(recenice.get()[i])<< std::endl;
+                                       ^
+11 errors generated.

@@ -1,0 +1,7 @@
+/rhome/s/sdziho1/workspace/TP/T13/Z3/main.cpp:35:14: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+                if(prosjek==5) prosjek=ocjena;
+                   ~~~~~~~^ ~
+/rhome/s/sdziho1/workspace/TP/T13/Z3/main.cpp:142:22: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+                        if(x->DajProsjek()!=y->DajProsjek())return x->DajProsjek()>y->DajProsjek();
+                           ~~~~~~~~~~~~~~~^ ~~~~~~~~~~~~~~~
+2 warnings generated.

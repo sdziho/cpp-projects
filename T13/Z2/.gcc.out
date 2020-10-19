@@ -1,0 +1,4 @@
+/rhome/s/sdziho1/workspace/TP/T13/Z2/main.cpp:26:14: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+                if(prosjek==5) prosjek=ocjena;
+                   ~~~~~~~^ ~
+1 warning generated.

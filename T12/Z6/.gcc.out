@@ -1,0 +1,13 @@
+/rhome/s/sdziho1/workspace/TP/T12/Z6/main.cpp:91:47: warning: field 'ime_matrice' will be initialized after field 'elementi' [-Wreorder]
+         br_redova(br_redova), br_kolona(br_kolona), ime_matrice(ime),
+                                                     ^
+/rhome/s/sdziho1/workspace/TP/T12/Z6/main.cpp:162:18: note: in instantiation of member function 'Matrica<double>::Matrica' requested here
+        Matrica<double> a(2, 2, 'a');
+                        ^
+/rhome/s/sdziho1/workspace/TP/T12/Z6/main.cpp:101:27: warning: field 'ime_matrice' will be initialized after field 'elementi' [-Wreorder]
+         br_kolona(m.br_kolona), ime_matrice(m.ime_matrice),
+                                 ^
+/rhome/s/sdziho1/workspace/TP/T12/Z6/main.cpp:170:24: note: in instantiation of member function 'Matrica<double>::Matrica' requested here
+        const Matrica<double> c(a);
+                              ^
+2 warnings generated.

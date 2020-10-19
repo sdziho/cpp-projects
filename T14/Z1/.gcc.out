@@ -1,0 +1,4 @@
+/rhome/s/sdziho1/workspace/TP/T14/Z1/main.cpp:63:16: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+                        if(x.prosjek!=y.prosjek) return x.prosjek>y.prosjek;
+                           ~~~~~~~~~^ ~~~~~~~~~
+1 warning generated.

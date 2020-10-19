@@ -1,0 +1,158 @@
+{
+    "buildhost_description": {
+        "id": "magi",
+        "os": "Linux 4.4.0-70-generic x86_64\nUbuntu 16.04.2 LTS\n",
+        "compiler_version": "g++ (Ubuntu 5.4.0-6ubuntu1~16.04.4) 5.4.0 20160609",
+        "debugger_version": "GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.04) 7.11.1",
+        "profiler_version": "valgrind-3.11.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In function ‘typename std::remove_reference<decltype (matrica[0][0])>::type** KreirajDinamickuKopiju2D(tip) [with tip = std::vector<std::vector<int> >; typename std::remove_reference<decltype (matrica[0][0])>::type = int]’:\nmain.cpp:27:49: warning: ‘pok’ may be used uninitialized in this function [-Wmaybe-uninitialized]\n   for(int i=0;i<matrica.size();i++) delete[] pok[i];\n                                                 ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "27",
+                "col": "49",
+                "message": "'pok' may be used uninitialized in this function",
+                "output": "/tmp/buildservice/bs_9627/main.cpp:27:49: warning: ‘pok’ may be used uninitialized in this function [-Wmaybe-uninitialized]   for(int i=0;i<matrica.size();i++) delete[] pok[i];                                                 ^",
+                "code": "for(int i=0;i<matrica.size();i++) delete[] pok[i];"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3417": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj redova kvadratne matrice: Unesite elemente matrice: 3 12 5 \n123 -6 2 \n17 4 -31 \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3418": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj redova kvadratne matrice: Nedovoljno memorije",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3419": {
+            "status": 1,
+            "run_result": {
+                "output": "1 \n2 2 \n3 3 3 \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3420": {
+            "status": 1,
+            "run_result": {
+                "output": "Ja \ntestiram vas \nprogram na stringove \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3421": {
+            "status": 1,
+            "run_result": {
+                "output": "1.35 2.45 -5 \n100 -50 11.5 \n1.35 2.45 -5 \n1.35 2.45 -5 \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3422": {
+            "status": 1,
+            "run_result": {
+                "output": "6 6 6 7 \n12 23 34 45 \n1000 1 2 30 \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3423": {
+            "status": 1,
+            "run_result": {
+                "output": "10000 20000 20000 10000 \n11000 12 12 11 \n1000 12222 2000 30000 \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3436": {
+            "status": 1,
+            "run_result": {
+                "output": "1 2 3 \n1 2 3 \n1 2 3 \nNew pozvan 4 puta,  delete [] pozvan 4 puta, a alocirano ukupno 60 bajta i to redom: 24 12 12 12 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3437": {
+            "status": 1,
+            "run_result": {
+                "output": "1 2 3 \n1 2 3 \n1 2 3 \nNew pozvan 4 puta,  delete [] pozvan 4 puta, a alocirano ukupno 96 bajta i to redom: 24 24 24 24 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1492104643
+}

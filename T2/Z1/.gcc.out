@@ -1,0 +1,8 @@
+/rhome/s/sdziho1/workspace/TP/T2/Z1/main.cpp: In function ‘bool DaLiJeProst(int)’:
+/rhome/s/sdziho1/workspace/TP/T2/Z1/main.cpp:22:33: error: expected primary-expression before ‘)’ token
+   if(i==std::numeric_limits<int>) break;
+                                 ^
+/rhome/s/sdziho1/workspace/TP/T2/Z1/main.cpp: In function ‘std::vector<int> ProstiBrojeviUOpsegu(int, int)’:
+/rhome/s/sdziho1/workspace/TP/T2/Z1/main.cpp:32:33: error: expected primary-expression before ‘)’ token
+   if(i==std::numeric_limits<int>) break;
+                                 ^

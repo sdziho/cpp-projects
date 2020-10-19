@@ -1,0 +1,11 @@
+/rhome/s/sdziho1/workspace/TP/T4/Z4/main.cpp:22:29: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+        while(!std::cin || a==' '){
+                           ~^ ~~~
+/rhome/s/sdziho1/workspace/TP/T4/Z4/main.cpp:56:32: warning: '&&' within '||' [-Wlogical-op-parentheses]
+        if(std::cin.peek()>='A'&&std::cin.peek()<='z' || std::cin.peek()=='.'){
+           ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~ ~~
+/rhome/s/sdziho1/workspace/TP/T4/Z4/main.cpp:56:32: note: place parentheses around the '&&' expression to silence this warning
+        if(std::cin.peek()>='A'&&std::cin.peek()<='z' || std::cin.peek()=='.'){
+                               ^
+           (                                         )
+2 warnings generated.

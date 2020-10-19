@@ -1,0 +1,4 @@
+/rhome/s/sdziho1/workspace/TP/T3/Z6/main.cpp: In function ‘int NajvecaSirina(Matrica)’:
+/rhome/s/sdziho1/workspace/TP/T3/Z6/main.cpp:33:26: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+          }while(m[i][j]!=0);
+                          ^
